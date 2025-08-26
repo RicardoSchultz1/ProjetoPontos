@@ -1,0 +1,42 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Lista de lojas */
+.lista {
+  padding: 15px;
+}
+
+.loja {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.loja img {
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.info h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #555;
+}

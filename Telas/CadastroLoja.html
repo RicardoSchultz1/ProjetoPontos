@@ -1,0 +1,32 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Loja</title>
+  <link rel="stylesheet" href="style/CadastroLojo.css">
+</head>
+<body>
+  <!-- Cabeçalho (mesmo da tela principal) -->
+    <div id="navbar"></div>
+  <!-- Formulário -->
+  <main class="form-container">
+    <h2>Criar Loja</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite o nome da loja" required>
+
+      <label for="cnpj">CNPJ:</label>
+      <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ" required>
+
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço" required>
+
+      <label for="imagem">Logo / Imagem:</label>
+      <input type="file" id="imagem" name="imagem" accept="image/*">
+
+      <button type="submit">Salvar</button>
+    </form>
+  </main>
+  <script src="Componentes/NavBar.js"></script>
+</body>
+</html>

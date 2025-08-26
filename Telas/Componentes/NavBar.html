@@ -1,0 +1,55 @@
+<style>
+  /* CSS do Navbar */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004aad;
+    color: #fff;
+    padding: 10px 15px;
+  }
+
+  .site-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .logo img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-buttons button {
+    margin-left: 8px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #004aad;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .nav-buttons button:hover {
+    background: #e0e0e0;
+  }
+</style>
+
+<header class="navbar">
+  <div class="site-name">NomeSite</div>
+  <div class="logo">
+    <img src="https://picsum.photos/40" alt="Logo">
+  </div>
+  <div class="nav-buttons">
+    <button onclick="window.location.href='index.html'">Home</button>
+    <button onclick="window.location.href='nova-tela.html'">Criar Loja</button>
+    <button onclick="alert('Criar Ponto')">Criar Ponto</button>
+    <button onclick="alert('Adicionar Ponto')">Adicionar Ponto</button>
+  </div>
+</header>
