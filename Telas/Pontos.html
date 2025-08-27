@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Pontos</title>
+  <link rel="stylesheet" href="Style/ponto.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Conteúdo -->
+  <main class="container">
+    <h1>Adicionar Pontos à Loja</h1>
+    <form class="form-adicionar">
+      <label for="cnpj">CNPJ da Loja</label>
+      <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ da loja" required>
+
+      <label for="pontos">Quantidade de Pontos</label>
+      <input type="number" id="pontos" name="pontos" placeholder="Digite os pontos" min="1" required>
+
+      <button type="submit">Adicionar Pontos</button>
+    </form>
+  </main>
+  <script src="Componentes/NavBar.js"></script>
+  <script src="Script/Pontos.js"></script>
+</body>
+</html>

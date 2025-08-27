@@ -1,0 +1,84 @@
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* O retângulo de cada item da lista */
+        .loja-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            
+            /* Layout flexível para alinhar os itens */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* --- Itens dentro do retângulo --- */
+
+        /* Imagem da loja (agora no canto esquerdo) */
+        .loja-imagem {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #eee;
+        }
+
+        /* Informações da loja (nome) */
+        .loja-info {
+            flex-grow: 1; /* Ocupa o espaço restante no meio */
+            padding: 0 20px;
+            font-size: 1.1em;
+        }
+        
+        /* Campo de Pontos (agora no canto direito) */
+        .loja-pontos {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #007bff;
+            min-width: 100px; 
+            text-align: right; /* Alinha o texto dos pontos à direita */
+        }
+
+        /* Mensagem para quando não houver lojas */
+        .mensagem-vazia {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            color: #777;
+        }
+    </style>
+    <header class="ListaLoja">
+        <div class="loja-item">
+            <img class="loja-imagem" 
+                src="{{IMAGEM_SRC}}" 
+                alt="Logo da {{NOME_LOJA}}">
+
+            <div class="loja-info">
+                {{NOME_LOJA}}
+            </div>
+            
+            <div class="loja-pontos">
+                {{PONTOS}} Pontos
+            </div>
+        </div>
+    </header>
