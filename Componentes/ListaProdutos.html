@@ -1,0 +1,83 @@
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Retângulo de cada produto */
+.produto-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Imagem do produto */
+.produto-imagem {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #eee;
+}
+
+/* Informações do produto */
+.produto-info {
+    flex-grow: 1;
+    padding: 0 20px;
+    font-size: 1em;
+}
+
+/* Pontos do produto */
+.produto-pontos {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+    min-width: 100px; 
+    text-align: right;
+}
+
+/* Mensagem quando não houver produtos */
+.mensagem-vazia {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #777;
+} 
+</style>
+
+<header class="ListaProdutos">
+    <div class="produto-item">
+        <img class="produto-imagem" 
+             src="{{IMAGEM_SRC}}" 
+             alt="Foto do {{NOME_PRODUTO}}">
+
+        <div class="produto-info">
+            <strong>{{NOME_PRODUTO}}</strong><br>
+            {{DESCRICAO}}
+        </div>
+        
+        <div class="produto-pontos">
+            {{PONTOS}} Pontos
+        </div>
+    </div>
+</header>
