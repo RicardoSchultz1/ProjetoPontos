@@ -1,47 +1,77 @@
-/* Cadastro Loja */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container do formulário */
 .form-container {
-  padding: 20px;
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .form-container h2 {
-  margin-bottom: 15px;
-  color: #004aad;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 
+/* Formulário */
 form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  gap: 15px;
 }
 
-label {
+form label {
   font-weight: bold;
-  font-size: 14px;
+  margin-bottom: 5px;
 }
 
-input[type="text"], 
-input[type="file"] {
-  padding: 8px;
+form input {
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-button[type="submit"] {
-  margin-top: 10px;
-  padding: 10px;
-  background: #004aad;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 15px;
+form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Campo de upload */
+form input[type="file"] {
+  padding: 6px;
+  background: #f9f9f9;
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
-  background: #003580;
+/* Botão */
+form button {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background: #0056b3;
 }
